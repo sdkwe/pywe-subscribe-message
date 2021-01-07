@@ -37,7 +37,7 @@ class SubscribeMessage(BaseToken):
 
     def send_wxa_subscribe_template_message(self, user_id, template_id, data, page=None, miniprogram_state=None, lang=None, appid=None, secret=None, token=None, storage=None):
         return self.post(
-            self.WECHAT_SEND_SUBSCRIBE_TEMPLATE_MESSAGE,
+            self.WECHAT_SEND_WXA_SUBSCRIBE_TEMPLATE_MESSAGE,
             params={
                 'access_token': final_access_token(self, appid=appid, secret=secret, token=token, storage=storage),
             },
